@@ -1,0 +1,106 @@
+/* 🌈 Background & global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* 🧱 Main container (form card look) */
+.container {
+  max-width: 420px;
+  margin: 70px auto;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+/* 🏷️ Headings */
+h1 {
+  color: #4b0082;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #4b0082;
+  margin-bottom: 20px;
+}
+
+/* ✏️ Input styles */
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+input:focus, textarea:focus {
+  border-color: #4b0082;
+  outline: none;
+  box-shadow: 0 0 8px #b19cd9;
+}
+
+/* 🎯 Buttons */
+button {
+  background: #4b0082;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #5a00a0;
+  transform: scale(1.05);
+}
+
+/* 🧭 Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #4b0082;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #7a00c6;
+  text-decoration: underline;
+}
+
+/* 🧾 Messages */
+.message {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* 📚 Book card styling */
+.book-card {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #4b0082;
+  text-align: left;
+  width: 90%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
