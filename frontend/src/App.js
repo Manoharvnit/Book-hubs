@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <div style={{ textAlign: "center" }}>
-        <h1>📚 Book Hub</h1>
+        <h1>Book Hub</h1>
 
         {/* 🔗 Navigation Links */}
         <nav style={{ marginBottom: "20px" }}>
