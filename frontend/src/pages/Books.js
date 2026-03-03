@@ -21,7 +21,7 @@ function Books() {
   const fetchBooks = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/books", {
+      const res = await axios.get("https://book-hubs.onrender.com/api/books", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setBooks(res.data);
@@ -35,7 +35,7 @@ function Books() {
     e.preventDefault();
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.post("http://localhost:5000/api/books", form, {
+      const res = await axios.post("https://book-hubs.onrender.com/api/books", form, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setMessage("✅ Book added successfully!");
@@ -49,7 +49,7 @@ function Books() {
   const deleteBook = async (id) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`http://localhost:5000/api/books/${id}`, {
+      await axios.delete(`https://book-hubs.onrender.com/api/books/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setBooks(books.filter((b) => b._id !== id));

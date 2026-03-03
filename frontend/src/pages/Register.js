@@ -8,7 +8,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/register", form);
+      const res = await axios.post("https://book-hubs.onrender.com/api/auth/register", form);
       console.log(res.data);
       setMessage("✅ User Registered Successfully!");
     } catch (err) {
